@@ -71,11 +71,15 @@ All sound effects were submitted through a custom Discord bot I developed (discu
 
 For implementation, I chose to use **Sound Cues** rather than MetaSounds, as this allowed for a simpler and more efficient workflow while still achieving the required functionality. All voice lines, foley, and SFX were organised into Sound Cues, making use of **randomiser and modulator nodes** to introduce variation in playback and avoid repetition.  
 
+(*Figure. Sound Cue Example.*)
+
 <iframe src="https://blueprintue.com/render/dv6pn3a7/" scrolling="no" allowfullscreen></iframe>
 
 To create the ambient soundscape for the main level, I developed a system using **target points placed within the environment** to define the origin of each sound. These were referenced within a Blueprint (BP_SoundAmbienceManager), where sounds were triggered at their locations using *Spawn Sound at Location*.  Each ambient sound (e.g. bar noise or chair movement) was linked to a specific target point and Sound Cue. To avoid predictable repetition, I used a **timer system with randomised intervals**, allowing sounds to play naturally over time rather than looping continuously.  Validation checks were also implemented to ensure that target points existed before attempting to play sounds, improving stability and preventing runtime errors.  
 
 <iframe src="https://blueprintue.com/render/unh5na9y/" scrolling="no" allowfullscreen></iframe>
+
+(*Figure. Sound Ambience Manager.*)
 
 
 #### Audio Settings Menu
@@ -124,6 +128,12 @@ The server provided:
 - Clear submission guidelines and instructions  
 - Dedicated channels for different types of contributors  
 - A structured environment for feedback and updates  
+  
+.
+
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/AudioTeamServer.png?token=GHSAT0AAAAAADZIUT7HNHXZQUTJO7CWGNXE2OL6RSQ" width="500">
+
+(*Figure. Audio Standards in Audio Team Server.*)
 
 ## Public Facing Discord Server
 
@@ -131,16 +141,19 @@ In addition to internal tools, I created a public-facing Discord server to suppo
 
 The server features:
 
-- Role selection for region and pronouns  
+- Role selection for region and pronouns using pre-existing bot
 - Optional roles for receiving social media updates  
 - Clearly defined rules and a dedicated welcome and information area  
 - The use of webhooks to deliver announcements and updates efficiently  
+  
 
 This provided a central space for players to interact with the project, stay informed, and engage with the development process.  
+<p align="center">
+ <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/PublicServerRoles.png?token=GHSAT0AAAAAADZIUT7G2U2GW2VUO3XMRM2O2OL6JPA" width="25%">
+ <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/PublicServerRules.png?token=GHSAT0AAAAAADZIUT7H2ZAX75VJORHJLCIE2OL6J2Q" width="35%">
+ <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/PublicServerWelcome.png?token=GHSAT0AAAAAADZIUT7G77K55KU33ES2RTP42OL6NWA" width="35%">
 
-
- 
-
+ (*Figure . Webhook Messages in Public Server.*)
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
