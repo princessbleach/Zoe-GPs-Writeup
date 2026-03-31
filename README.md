@@ -106,6 +106,10 @@ I then collated the submitted ticket data (with consent) and conducted analysis 
 
 (*For Assad, more on this, in respective repository's README.md*)
 
+<img src="gi" width="650">
+
+(*Figure. Sound Upload Bot Demo.*)
+
 ## Discord Sound Submission Bot  
 
 I created a custom Discord bot to handle the submission of audio assets from music students. This helps save myself time as I do not have to manually move assets into the project but it also aids musicians who do not know how to use version control. 
