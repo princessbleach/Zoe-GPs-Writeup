@@ -106,9 +106,9 @@ I then collated the submitted ticket data (with consent) and conducted analysis 
 
 (*For Assad, more on this, in respective repository's README.md*)
 
-<img src="gi" width="650">
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/TicketDemo.gif?token=GHSAT0AAAAAADZIUT7HDLVGGVSMVVSMFSRM2OL7ADQ" width="650">
 
-(*Figure. Sound Upload Bot Demo.*)
+(*Figure. Ticket Bot Demo.*)
 
 ## Discord Sound Submission Bot  
 
@@ -123,6 +123,10 @@ Submitted files were automatically organised into the project directory, allowin
 
 
 (*For Assad, more on this in respective repository's README.md*)
+
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/SoundUploadDemonstration.gif?token=GHSAT0AAAAAADZIUT7HEH7DNA2Z65YYFO3I2OL7BIQ" width="650">
+
+(*Figure. Audio Upload Bot Demo.*)
 
 ## Audio Team Discord Server  
 
