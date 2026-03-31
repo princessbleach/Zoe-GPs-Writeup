@@ -98,49 +98,48 @@ This system improved communication within the team by:
 
 The use of a structured ticketing system helped simulate a more professional production workflow, supporting better task management and accountability within the team.
 
-I then collated all the data, with consent, and performed data analysis. This highlighted aspects such as: ticket distribution by category, by course. I created graphs to visually display this data.
+I then collated the submitted ticket data (with consent) and conducted analysis to identify patterns in team workflow and task distribution. This included examining ticket distribution by category and by course, highlighting trends and areas of high activity. The findings were presented through graphs, allowing for clearer visual communication and more accessible interpretation of the data. Most tickets seemed to center around GitHub (GitHub, 2026) issues. 
 
-(*For Assad, more on this in respective repository's README.md*)
+(*For Assad, more on this, in respective repository's README.md*)
 
 ## Discord Sound Submission Bot  
 
+I created a custom Discord bot to handle the submission of audio assets from music students. This helps save myself time as I do not have to manually move assets into the project but it also aids musicians who do not know how to use version control. 
 
-I created a custom Discord bot to handle the submission of audio assets from external contributors. This replaced informal file sharing methods and provided a structured, centralised system for collecting sound files.  
-
-The bot allowed users to:
+The bot allows users to:
 - Submit audio files directly through Discord  
 - Categorise submissions (e.g. SFX, foley, music)  
 - Ensure files were delivered in the correct format  
 
 Submitted files were automatically organised into the project directory, allowing for faster integration into Unreal Engine and reducing manual file handling.  
 
-This system improved efficiency, reduced confusion, and ensured consistency across all submitted assets.
 
 (*For Assad, more on this in respective repository's README.md*)
 
-## Public-Facing Discord Server  
+## Audio Team Discord Server  
 
-
-
-Alongside this, I developed a public-facing Discord server to manage communication with voice actors and musicians.  
+Alongside this, I developed a Discord server to manage communication with myself, designers and musicians.  
 
 The server provided:
 - Clear submission guidelines and instructions  
 - Dedicated channels for different types of contributors  
 - A structured environment for feedback and updates  
 
-This allowed contributors to engage with the project in a more organised and professional way, while also reducing the workload on the development team by centralising communication.  
+## Public Facing Discord Server
+
+In addition to internal tools, I created a public-facing Discord server to support player engagement and external communication.  
+
+The server features:
+
+- Role selection for region and pronouns  
+- Optional roles for receiving social media updates  
+- Clearly defined rules and a dedicated welcome and information area  
+- The use of webhooks to deliver announcements and updates efficiently  
+
+This provided a central space for players to interact with the project, stay informed, and engage with the development process.  
 
 
-
-## Impact  
-
-
-
-These systems supported the overall production pipeline by improving organisation, communication, and asset flow.  
-
-They also demonstrated the use of **custom tools and industry-relevant workflows** to solve practical development challenges within a collaborative project.
-
+ 
 
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
@@ -166,6 +165,8 @@ Telltale Games (2010) *Poker Night at the Inventory*.
 Cockos Incorporated (2024) *REAPER*. Available at: https://www.reaper.fm/ 
 
 Atlassian (2024) *Trello*. Available at: https://trello.com/ 
+
+GitHub (2026) *GitHub*. Available at: https://github.com/ 
 
 **AI**
 
