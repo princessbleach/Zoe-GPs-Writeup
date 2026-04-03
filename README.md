@@ -36,10 +36,6 @@ This log is divided into three sections:
 
 
 
-
-
-
-
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
 ## Audio Research: Card Game Industry  
@@ -58,7 +54,7 @@ An initial mistake in the audio pre-production process was casting voice actors 
 
 #### Voice Lines
 
-We recorded all voice lines over two days in our university studio. The process was highly collaborative, with two designers and two developers present. The designers printed out scripts, ensuring actors had the exact lines at hand. To help actors embody their characters, we displayed concept art on a screen, offering visual inspiration. The sessions ran smoothly, and we successfully captured all required voice content within our planned timeframe. I also outsourced an actor online to play one of the older archetypes as there were no students suitable. I then edited voice lines in Reaper (Cockos Incorporated, 2024), ensuring they met standards needed in game and exported them with understandable naming conventions. 
+We recorded all voice lines over two days in one of the uni studios. The process was highly collaborative, with two designers and two developers present. The designers printed out scripts, ensuring actors had the exact lines at hand. To help actors embody their characters, we displayed concept art on a screen, offering visual inspiration. The sessions ran smoothly, and we successfully captured all required voice content within our planned timeframe. I also out-sourced an actor online to play one of the older archetypes as there were no students suitable. I then edited voice lines in Reaper (Cockos Incorporated, 2024), ensuring they met standards needed in game and exported them with understandable naming conventions. 
 
 #### Music, Foley/SFX
 
@@ -104,9 +100,9 @@ The use of a structured ticketing system helped simulate a more professional pro
 
 I then collated the submitted ticket data (with consent) and conducted analysis to identify patterns in team workflow and task distribution. This included examining ticket distribution by category and by course, highlighting trends and areas of high activity. The findings were presented through graphs, allowing for clearer visual communication and more accessible interpretation of the data. Most tickets seemed to center around GitHub (GitHub, 2026) issues. 
 
-(*For Assad, more on this, in respective repository's README.md*)
+(*For Assad, more on this, including source code, in respective repository's README.md*)
 
-<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/TicketDemo.gif?token=GHSAT0AAAAAADZIUT7HDLVGGVSMVVSMFSRM2OL7ADQ" width="650">
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/TicketDemo.gif" width="650">
 
 (*Figure. Ticket Bot Demo.*)
 
@@ -122,9 +118,10 @@ The bot allows users to:
 Submitted files were automatically organised into the project directory, allowing for faster integration into Unreal Engine and reducing manual file handling.  
 
 
-(*For Assad, more on this in respective repository's README.md*)
+(*For Assad, more on this, including source code, in respective repository's README.md*)
 
-<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/SoundUploadDemonstration.gif?token=GHSAT0AAAAAADZIUT7HEH7DNA2Z65YYFO3I2OL7BIQ" width="650">
+
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/SoundUploadDemonstration.gif" width="650">
 
 (*Figure. Audio Upload Bot Demo.*)
 
@@ -139,27 +136,29 @@ The server provided:
   
 .
 
-<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/AudioTeamServer.png?token=GHSAT0AAAAAADZIUT7HNHXZQUTJO7CWGNXE2OL6RSQ" width="500">
+<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/AudioTeamServer.png?raw=true" width="500">
 
 (*Figure. Audio Standards in Audio Team Server.*)
 
 ## Public Facing Discord Server
 
-In addition to internal tools, I created a public-facing Discord server to support player engagement and external communication.  
+In addition to internal tools, I created a public-facing Discord server to support player engagement and external communication. This provided a central space for players to interact with the project, stay informed, and engage with the development process.  
 
 The server features:
 
 - Role selection for region and pronouns using pre-existing bot
 - Optional roles for receiving social media updates  
 - Clearly defined rules and a dedicated welcome and information area  
-- The use of webhooks to deliver announcements and updates efficiently  
+- The use of webhooks to deliver announcements and updates efficiently
   
 
-This provided a central space for players to interact with the project, stay informed, and engage with the development process.  
+ Webhooks are automated messages sent between applications when a specific event occurs, enabling real-time communication without manual input (GitHub, 2026). I chose to use Webhooks so that I wouldn't have to send messages from my own account. This solves any problems caused if I were to leave the server or detach from the project in the future.
+
+
 <p align="center">
- <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/PublicServerRoles.png?token=GHSAT0AAAAAADZIUT7G2U2GW2VUO3XMRM2O2OL6JPA" width="25%">
- <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/PublicServerRules.png?token=GHSAT0AAAAAADZIUT7H2ZAX75VJORHJLCIE2OL6J2Q" width="35%">
- <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/PublicServerWelcome.png?token=GHSAT0AAAAAADZIUT7G77K55KU33ES2RTP42OL6NWA" width="35%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/PublicServerRoles.png?raw=true" width="25%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/PublicServerRules.png?raw=true" width="35%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/PublicServerWelcome.png?raw=true" width="35%">
 
  (*Figure . Webhook Messages in Public Server.*)
 
@@ -173,6 +172,11 @@ This provided a central space for players to interact with the project, stay inf
 
 
 ## Bibliography
+
+**AI DECLARATION**
+
+AI assistance (ChatGPT, OpenAI) was used to support structuring and refinement of this document. All technical decisions are my own.
+
 
 **GAMES**
 
@@ -189,6 +193,7 @@ Atlassian (2024) *Trello*. Available at: https://trello.com/
 
 GitHub (2026) *GitHub*. Available at: https://github.com/ 
 
-**AI**
 
-AI assistance (ChatGPT, OpenAI) was used to support structuring and refinement of this document. All technical decisions are my own.
+**OTHER**
+
+GitHub (2026) *About webhooks*. Available at: https://docs.github.com/en/webhooks.
