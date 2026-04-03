@@ -8,31 +8,29 @@ Zoe Efstathiou 2423029
 
 This document outlines my contributions to *Greedy Piggies*.
 
-My work focuses on audio direction, technical implementation, and workflow development, demonstrating both creative design and the application of industry-standard tools within a collaborative production environment.
-
-
-## My Role  
-
-I worked as Audio Lead, responsible for both the creative direction and technical implementation of sound systems within the project.  
-
-This included:
-- Designing the overall audio style and player feedback systems  
-- Organising and managing voice actors and musicians  
-- Editing and preparing audio assets for integration  
-- Implementing voice lines, UI audio, and ambient systems in Unreal Engine  
-- Ensuring functionality across both single-player and multiplayer contexts  
-
-Alongside this, I developed workflow tools (including Discord-based systems) and contributed to game-play systems such as archetypes and voice-driven interactions.
+My work focuses on audio direction, archetype implementation, and workflow development, demonstrating both creative design and the application of industry-standard tools within a collaborative production environment.
 
 
 
-## Structure  
 
-This log is divided into three sections:
+## Contents
 
-1. Audio Direction & Implementation  
-2. Archetypes, Voice Lines & Animation Systems  
-3. Workflow & Pipeline Tools 
+Audio
+- [Audio Research](#audio-research-card-game-industry)  
+- [Audio Production](#audio-production)  
+- [Audio Implementation](#audio-implementation)  
+- [Audio Settings Menu](#audio-settings-menu) 
+
+Workflow + Pipeline Tools
+- [Discord Ticket Bot](#discord-ticket-bot)  
+- [Discord Sound Bot](#discord-sound-submission-bot)  
+- [Audio Team Discord Server](#audio-team-discord-server)
+- [Public Discord Server](#public-facing-discord-server)
+
+Archetypes
+- [Archetype and Voice Line Systems](#archetype-and-voice-line-systems)  
+- [Narrator System](#narrator-voice-lines)  
+
 
 
 
@@ -43,6 +41,19 @@ This log is divided into three sections:
 During pre-production, audio direction was established collaboratively to ensure a consistent vision across the project.  
 
 As a team, we shared **reference material and curated playlists** based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010). This helped define the tone, pacing, and overall atmosphere of the game early in development. In addition, we provided voice acting references to guide performance. For example, the narrator character was inspired by the “Old Money” style delivery found in Deadlock (Valve, 2024), helping to establish a clear tone and personality for voice performances.
+
+[Video Click Here: Old Money Reference](https://youtu.be/jaaR9vMQGTg?si=jL76GBk_HUIwVV4i)
+
+[![Old Money Reference](https://i.ytimg.com/an_webp/jaaR9vMQGTg/mqdefault_6s.webp?du=3000&sqp=CKCOv84G&rs=AOn4CLBUKs7udx_EH_nK7KN0OsrrWhgagQ)]
+
+(*Figure. Old Money Reference*)
+
+[Video Click Here: Poker Night Reference](https://youtu.be/zbnhXCbP-jU?si=ZA4UwPBuxWlPC1G9) 
+
+[![Poker Night Reference](https://i.ytimg.com/vi/zbnhXCbP-jU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGD4gZSgcMA8=&rs=AOn4CLCvsP2lz7OPgtoS8JNmnAeh3oU79g)]
+
+(*Figure. Poker Night Music Reference.*)
+
 
 To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and game play context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
 
@@ -93,11 +104,23 @@ To create the ambient soundscape for the main level, I developed a system using 
 
 (*Figure. Sound Ambience Manager.*)
 
+I also asked a designer to use Unreal's inbuilt subtitle system and write subtitles for each voice line sound wave. 
 
-#### Audio Settings Menu
+## Audio Settings Menu
 
+I implemented an audio settings system to allow players to control different sound categories within the game. This was structured using **Sound Classes**, a **Sound Mix**, and a **Save Game system** to ensure settings persisted between sessions.  
 
-blah balh
+Separate Sound Classes were created for key categories (e.g. music, SFX, dialogue, ambience), allowing each to be adjusted independently. A Sound Mix (*SCM_SoundSettings*) was used to apply real-time volume changes through Sound Class overrides.  A UI widget (*WBP_SoundOptions*) provided sliders for each category. These values were passed into Blueprint logic, where they were applied to the corresponding Sound Classes using volume multipliers.  
+
+To persist settings, a **Save Game object (SG_SoundSettings)** was used. On game start, the system checks for an existing save file:
+- If found, saved values are loaded and applied  
+- If not, a new save is created with default values  
+
+Whenever a slider is adjusted, the updated values are applied immediately and written back to the Save Game object.This system ensures consistent audio control for the player, while demonstrating the integration of UI, audio systems, and data persistence within Unreal Engine.
+
+<iframe src="https://blueprintue.com/render/h7-aezl5/" scrolling="no" allowfullscreen></iframe>
+
+(*Figure. Sound Settings*)
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
@@ -185,15 +208,17 @@ The server features:
 
 ## Archetype and Voice Line Systems  
 
-
-
 I developed an archetype system to define player identity through meshes, animations, and voice lines, using a data-driven approach to ensure scalability and consistency across the project.  
 
 Each archetype was implemented as a **Data Asset**, containing references to skeletal meshes, animation data, and structured voice line sets. This allowed archetypes to be applied dynamically at runtime without modifying Blueprint logic. Voice lines were organised using an **enum (VoiceLineCategory)** and a **struct (VoiceLineEntry)**. The enum defined categories such as win, lose, chuckle, etc. whilst the struct stored associated Sound Cues. These were stored within each archetype’s Data Asset.
 
+<iframe src="https://blueprintue.com/render/kpey9wm3/" scrolling="no" allowfullscreen></iframe>
+
+(*Figure. Lose Reaction Function Example in BP_ArchetypeComponent.*)
+
 This type of system allows for designers to easily swap in animations, meshes etc without having to write Blueprints. They can simply drag into the data assets.
 
-A function-based system was used to retrieve voice lines by category. This function:
+A function-based system within an archetype component was used to retrieve voice lines by category. This function:
 - Takes a VoiceLineCategory as input  
 - Searches the archetype’s data for a matching entry  
 - Returns the appropriate Sound Cue for playback  
@@ -203,14 +228,46 @@ To support multiplayer contexts, voice lines were implemented using three playba
 - **Global**: Played for all players regardless of position, used for key events such as narrator announcements  
 - **Spatial (3D)**: Played at the character’s location using attenuation, allowing other players to hear voice lines relative to distance  
 
-This distinction ensured that audio remained clear and contextually appropriate within a multiplayer environment.  
+This distinction ensured that audio remained clear within a multiplayer environment. 
+
+<iframe src="https://blueprintue.com/render/yz0s_839/" scrolling="no" allowfullscreen></iframe>
+
+(*Figure. BP_ArchetypeComponent Event Graph.*)
+
+Cooldowns were implemented to prevent voice lines from being triggered repeatedly in quick succession. Each category was given a delay before it could be played again. These cooldowns could be adjusted per line in the Data Asset. This reduced audio overlap and ensured voice lines remained clear and impactful, particularly in multiplayer.
+
 
 An **Apply Archetype** function was used to initialise each player’s setup, assigning meshes, animation settings, and voice data. Animation montages were triggered alongside voice lines to maintain consistency between audio and visual feedback.  
 
-For multiplayer support, the selected archetype was stored within **Player State** and replicated to all clients. An OnRep function re-applied the archetype on each client when updated, ensuring that all players correctly displayed and heard each other’s characters.  
+<iframe src="https://blueprintue.com/render/7ulrrp07/" scrolling="no" allowfullscreen></iframe>
+
+(*Figure. ApplyArchetype Function.*)
+
+##  Narrator Voice Lines
+
+The narrator system was controlled through a dedicated Blueprint (*BP_NarratorManager*), which handled retrieval and playback of narrator voice lines. These lines are sometimes specific to the player archetype: e.g "Nepo-piggy wins the showdown!". Voice line data was stored in structured arrays within a Data Asset, using structs to define each entry. The system used a struct (*ST_GlobalNarratorLine*) containing a global event type and associated Sound Cue.  
+
+The **GetGlobalNarratorLine** function iterates through this array using a *For Each Loop*, comparing the input event type against each struct entry. When a match is found, the corresponding Sound Cue is returned. For archetype-specific narrator lines, the **GetNarratorLine** function performs a similar process, but matches against both the archetype tag and outcome type. A conditional check ensures both values match before returning the correct voice line.  
+
+<iframe src="https://blueprintue.com/render/kyp0e-d_/" scrolling="no" allowfullscreen></iframe>
+
+<iframe src="https://blueprintue.com/render/mpp9bw36/" scrolling="no" allowfullscreen></iframe>
+
+(*Figures. GetGlobalNarratorLine and GetNarratorLine Functions.*)
+
+Playback is handled through replicated multicast events:
+- **MC_PlayNarratorLine** is used for archetype-specific outcomes  
+- **MC_PlayGlobalNarratorLine** is used for global events  
+
+These events are executed on all clients, ensuring that narrator lines are synchronised across the network. Before playback, an **IsValid check** is used to ensure the retrieved Sound Cue exists. The audio is then played using *Spawn Sound 2D*, ensuring narrator lines are heard clearly by all players regardless of position.  
+
+This system separates data retrieval from playback, using structured data and networked events to create a reliable and scalable global audio system.
+
+### Integration Issues 
 
 
 
+<hr style="height:3px; border:none; background-color:#ffb6c1;">
 
 ## Bibliography
 
