@@ -65,8 +65,8 @@ An initial mistake in the audio pre-production process was casting voice actors 
 We recorded all voice lines over two days in one of the uni studios. The process was highly collaborative, with two designers and two developers present. The designers printed out scripts, ensuring actors had the exact lines at hand. To help actors embody their characters, we displayed concept art on a screen, offering visual inspiration. The sessions ran smoothly, and we successfully captured all required voice content within our planned timeframe. I also out-sourced an actor online to play one of the older archetypes as there were no students suitable. I then edited voice lines in Reaper (Cockos Incorporated, 2024), ensuring they met standards needed in game and exported them with understandable naming conventions. 
 
 <p align="center">
- <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Actor.jpeg?raw=true" width="20%">
- <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/RecordingInspo.jpeg?raw=true" width="21%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/Actor.jpeg?raw=true" width="20%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/RecordingInspo.jpeg?raw=true" width="21%">
 
 (*Figures . Voice Actors in Studio With Reference Material On Screen*)
 
@@ -79,7 +79,7 @@ For music, foley, and SFX production, I managed a team of four music students, d
 I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO (Ubisoft, 2016) was used to guide the style of card interaction sounds.
 
 <p align="center">
-<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Foley.jpeg?raw=true" width="300">
+<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/Foley.jpeg?raw=true" width="300">
 
 (*Figure . Foley Artist Making Card Sounds.*)
 
@@ -139,7 +139,7 @@ I then collated the submitted ticket data (with consent) and conducted analysis 
 (*For Assad, more on this, including source code, in respective repository's README.md*)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/TicketDemo.gif" width="650">
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/TicketDemo.gif" width="650">
 
 (*Figure. Ticket Bot Demo.*)
 
@@ -159,7 +159,7 @@ Submitted files were automatically organised into the project directory, allowin
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/SoundUploadDemonstration.gif" width="650">
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/SoundUploadDemonstration.gif" width="650">
 
 (*Figure. Audio Upload Bot Demo.*)
 
@@ -175,7 +175,7 @@ The server provided:
 .
 
 <p align="center">
-<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/AudioTeamServer.png?raw=true" width="400">
+<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/AudioTeamServer.png?raw=true" width="400">
 
 (*Figure. Audio Standards in Audio Team Server.*)
 
@@ -195,9 +195,9 @@ The server features:
 
 
 <p align="center">
- <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/PublicServerRoles.png?raw=true" width="25%">
- <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/PublicServerRules.png?raw=true" width="35%">
- <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/PublicServerWelcome.png?raw=true" width="35%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/PublicServerRoles.png?raw=true" width="25%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/PublicServerRules.png?raw=true" width="35%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/PublicServerWelcome.png?raw=true" width="35%">
 
  (*Figure . Webhook Messages in Public Server.*)
 
