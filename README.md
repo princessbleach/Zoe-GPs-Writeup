@@ -56,11 +56,24 @@ An initial mistake in the audio pre-production process was casting voice actors 
 
 We recorded all voice lines over two days in one of the uni studios. The process was highly collaborative, with two designers and two developers present. The designers printed out scripts, ensuring actors had the exact lines at hand. To help actors embody their characters, we displayed concept art on a screen, offering visual inspiration. The sessions ran smoothly, and we successfully captured all required voice content within our planned timeframe. I also out-sourced an actor online to play one of the older archetypes as there were no students suitable. I then edited voice lines in Reaper (Cockos Incorporated, 2024), ensuring they met standards needed in game and exported them with understandable naming conventions. 
 
+<p align="center">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Actor.jpeg?raw=true" width="20%">
+ <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/RecordingInspo.jpeg?raw=true" width="21%">
+
+(*Figures . Voice Actors in Studio With Reference Material On Screen*)
+
+
+
 #### Music, Foley/SFX
 
 For music, foley, and SFX production, I managed a team of four music students, dividing them into groups and assigning each a specific sound category. To support organisation, I created a Trello (Atlassian, 2024) board where designers could upload asset lists. This allowed musicians to easily view, claim, and track required audio assets. Designers were also able to attach reference audio to each task, which helped communicate intent and improved consistency across submissions. At this stage of development, limited visual material was available. 
 
 I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO (Ubisoft, 2016) was used to guide the style of card interaction sounds.
+
+<p align="center">
+<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Foley.jpeg?raw=true" width="300">
+
+(*Figure . Foley Artist Making Card Sounds.*)
 
 All sound effects were submitted through a custom Discord bot I developed (discussed later), with the majority of assets completed by week 6. Music production required a longer iteration process, with multiple revisions to better align with the intended tone of the game. I worked with a designer on creating the menu track also.
 
@@ -68,9 +81,11 @@ All sound effects were submitted through a custom Discord bot I developed (discu
 
 For implementation, I chose to use **Sound Cues** rather than MetaSounds, as this allowed for a simpler and more efficient workflow while still achieving the required functionality. All voice lines, foley, and SFX were organised into Sound Cues, making use of **randomiser and modulator nodes** to introduce variation in playback and avoid repetition.  
 
-(*Figure. Sound Cue Example.*)
+
 
 <iframe src="https://blueprintue.com/render/dv6pn3a7/" scrolling="no" allowfullscreen></iframe>
+
+(*Figure. Sound Cue Example.*)
 
 To create the ambient soundscape for the main level, I developed a system using **target points placed within the environment** to define the origin of each sound. These were referenced within a Blueprint (BP_SoundAmbienceManager), where sounds were triggered at their locations using *Spawn Sound at Location*.  Each ambient sound (e.g. bar noise or chair movement) was linked to a specific target point and Sound Cue. To avoid predictable repetition, I used a **timer system with randomised intervals**, allowing sounds to play naturally over time rather than looping continuously.  Validation checks were also implemented to ensure that target points existed before attempting to play sounds, improving stability and preventing runtime errors.  
 
@@ -103,6 +118,7 @@ I then collated the submitted ticket data (with consent) and conducted analysis 
 
 (*For Assad, more on this, including source code, in respective repository's README.md*)
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/TicketDemo.gif" width="650">
 
 (*Figure. Ticket Bot Demo.*)
@@ -122,6 +138,7 @@ Submitted files were automatically organised into the project directory, allowin
 (*For Assad, more on this, including source code, in respective repository's README.md*)
 
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/SoundUploadDemonstration.gif" width="650">
 
 (*Figure. Audio Upload Bot Demo.*)
@@ -137,7 +154,8 @@ The server provided:
   
 .
 
-<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/AudioTeamServer.png?raw=true" width="500">
+<p align="center">
+<img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/AudioTeamServer.png?raw=true" width="400">
 
 (*Figure. Audio Standards in Audio Team Server.*)
 
@@ -165,9 +183,31 @@ The server features:
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
+## Archetype and Voice Line Systems  
 
 
 
+I developed an archetype system to define player identity through meshes, animations, and voice lines, using a data-driven approach to ensure scalability and consistency across the project.  
+
+Each archetype was implemented as a **Data Asset**, containing references to skeletal meshes, animation data, and structured voice line sets. This allowed archetypes to be applied dynamically at runtime without modifying Blueprint logic. Voice lines were organised using an **enum (VoiceLineCategory)** and a **struct (VoiceLineEntry)**. The enum defined categories such as win, lose, chuckle, etc. whilst the struct stored associated Sound Cues. These were stored within each archetype’s Data Asset.
+
+This type of system allows for designers to easily swap in animations, meshes etc without having to write Blueprints. They can simply drag into the data assets.
+
+A function-based system was used to retrieve voice lines by category. This function:
+- Takes a VoiceLineCategory as input  
+- Searches the archetype’s data for a matching entry  
+- Returns the appropriate Sound Cue for playback  
+
+To support multiplayer contexts, voice lines were implemented using three playback types:
+- **Local (2D)**: Played only for the owning player, used for UI-related or feedback-specific lines e.g shop opening 
+- **Global**: Played for all players regardless of position, used for key events such as narrator announcements  
+- **Spatial (3D)**: Played at the character’s location using attenuation, allowing other players to hear voice lines relative to distance  
+
+This distinction ensured that audio remained clear and contextually appropriate within a multiplayer environment.  
+
+An **Apply Archetype** function was used to initialise each player’s setup, assigning meshes, animation settings, and voice data. Animation montages were triggered alongside voice lines to maintain consistency between audio and visual feedback.  
+
+For multiplayer support, the selected archetype was stored within **Player State** and replicated to all clients. An OnRep function re-applied the archetype on each client when updated, ensuring that all players correctly displayed and heard each other’s characters.  
 
 
 
@@ -176,7 +216,7 @@ The server features:
 
 **AI DECLARATION**
 
-AI assistance (ChatGPT, OpenAI) was used to support structuring and refinement of this document. All technical decisions are my own.
+AI assistance (ChatGPT, OpenAI) was used to support structuring and refinement of this document. 
 
 
 **GAMES**
