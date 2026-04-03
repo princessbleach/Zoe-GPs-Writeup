@@ -22,7 +22,7 @@ This included:
 - Implementing voice lines, UI audio, and ambient systems in Unreal Engine  
 - Ensuring functionality across both single-player and multiplayer contexts  
 
-Alongside this, I developed workflow tools (including Discord-based systems) and contributed to gameplay systems such as archetypes and voice-driven interactions.
+Alongside this, I developed workflow tools (including Discord-based systems) and contributed to game-play systems such as archetypes and voice-driven interactions.
 
 
 
@@ -42,9 +42,9 @@ This log is divided into three sections:
 
 During pre-production, audio direction was established collaboratively to ensure a consistent vision across the project.  
 
-As a team, we shared **reference material and curated playlists** based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010). This helped define the tone, pacing, and overall atmosphere of the game early in development.  
+As a team, we shared **reference material and curated playlists** based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010). This helped define the tone, pacing, and overall atmosphere of the game early in development. In addition, we provided voice acting references to guide performance. For example, the narrator character was inspired by the “Old Money” style delivery found in Deadlock (Valve, 2024), helping to establish a clear tone and personality for voice performances.
 
-To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and gameplay context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
+To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and game play context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
 
 An initial mistake in the audio pre-production process was casting voice actors based on generic portfolio auditions rather than using lines from the game itself. While some actors were well-suited to their roles, others did not match the intended tone or character, resulting in inefficient use of studio time. In future projects, I would ensure that all actors are auditioned using game-specific lines. 
 
@@ -60,6 +60,7 @@ We recorded all voice lines over two days in one of the uni studios. The process
 
 For music, foley, and SFX production, I managed a team of four music students, dividing them into groups and assigning each a specific sound category. To support organisation, I created a Trello (Atlassian, 2024) board where designers could upload asset lists. This allowed musicians to easily view, claim, and track required audio assets. Designers were also able to attach reference audio to each task, which helped communicate intent and improved consistency across submissions. At this stage of development, limited visual material was available. 
 
+I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO (Ubisoft, 2016) was used to guide the style of card interaction sounds.
 
 All sound effects were submitted through a custom Discord bot I developed (discussed later), with the majority of assets completed by week 6. Music production required a longer iteration process, with multiple revisions to better align with the intended tone of the game. I worked with a designer on creating the menu track also.
 
@@ -184,6 +185,9 @@ Treehouse Games (2023) *Liar’s Bar*.
 
 Telltale Games (2010) *Poker Night at the Inventory*.  
 
+Valve (2024) *Deadlock*.
+
+Ubisoft (2016) *UNO*.
 
 **SOFTWARE**
 
