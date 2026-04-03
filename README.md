@@ -10,9 +10,6 @@ This document outlines my contributions to *Greedy Piggies*.
 
 My work focuses on audio direction, archetype implementation, and workflow development, demonstrating both creative design and the application of industry-standard tools within a collaborative production environment.
 
-
-
-
 ## Contents
 
 Audio
@@ -32,7 +29,7 @@ Archetypes
 - [Narrator System](#narrator-voice-lines)  
 
 
-
+For access to **Tools and Production** task repositories, see RepositoryLinks.md
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
@@ -263,8 +260,17 @@ These events are executed on all clients, ensuring that narrator lines are synch
 
 This system separates data retrieval from playback, using structured data and networked events to create a reliable and scalable global audio system.
 
-### Integration Issues 
+## Integration Challenges
 
+
+
+An issue arose when integrating the archetype system with the character selection flow. Initially, archetypes were being initialised at the start of the level, before players had made their selection. This resulted in incorrect or default archetypes being applied.  
+
+To resolve this, archetype initialisation was moved to occur only after a player had selected and confirmed their choice. This ensured that the correct Data Asset was applied at the appropriate time.  
+
+Further challenges occurred in multiplayer, where archetype data was not consistently shared between clients. This was resolved by storing the selected archetype in **Player State** and using replication to ensure all players received the correct data. An OnRep function was then used to reapply the archetype on each client when updated.  
+
+This process highlighted the importance of timing and data ownership in multiplayer systems, particularly when integrating UI-driven selection with runtime gameplay logic.
 
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
@@ -293,6 +299,8 @@ Cockos Incorporated (2024) *REAPER*. Available at: https://www.reaper.fm/
 Atlassian (2024) *Trello*. Available at: https://trello.com/ 
 
 GitHub (2026) *GitHub*. Available at: https://github.com/ 
+
+Epic Games (2026) *Unreal Engine*. Available at: https://www.unrealengine.com/
 
 
 **OTHER**
