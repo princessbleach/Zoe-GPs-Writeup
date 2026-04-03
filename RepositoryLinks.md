@@ -11,7 +11,7 @@
 
 ### Week 4:Tool Evaluation
 > Security and GDPR evaluations
-🔗 see ToolEvaluation.pdf
+🔗 see [ToolEvaluation.pdf](https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/ToolEvaluation.pdf)
 
 ---
 
@@ -24,3 +24,8 @@
 ### Week 6: Data Analytics
 > Data analysis of ticket bot data 
 > 🔗 https://github.com/princessbleach/dataanalysis
+
+### Week 7: Bot Proposal
+> Proposal for ticket bot
+> 🔗 can be found in respective repository in [Proposal.md](https://github.com/princessbleach/discord-ticket-bot/blob/main/Proposal.md)
+

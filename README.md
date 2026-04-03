@@ -29,7 +29,7 @@ Archetypes
 - [Narrator System](#narrator-voice-lines)  
 
 
-For access to **Tools and Production** task repositories, see RepositoryLinks.md
+For access to **Tools and Production** task repositories, see [RepositoryLinks.md](https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/RepositoryLinks.md)
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
