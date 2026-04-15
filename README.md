@@ -37,13 +37,22 @@ For access to **Tools and Production** task repositories, see [RepositoryLinks.m
 
 During pre-production, audio direction was established collaboratively to ensure a consistent vision across the project.  
 
-As a team, we shared **reference material and curated playlists** based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010). This helped define the tone, pacing, and overall atmosphere of the game early in development. In addition, we provided voice acting references to guide performance. For example, the narrator character was inspired by the “Old Money” style delivery found in Deadlock (Valve, 2024), helping to establish a clear tone and personality for voice performances.
+As a team, we shared **reference material and curated playlists**. This helped define the tone, pacing, and overall atmosphere of the game early in development. Originally, we steered towards the electronic music genre, centering a more sinister tone. Reference songs included: LuthorCorp - John Murphy, Bunsen Burner - CUTS. 
 
-[Video Click Here: Old Money Reference](https://youtu.be/jaaR9vMQGTg?si=jL76GBk_HUIwVV4i)
+[Video Click Here: Superman Soundtrack Reference](https://youtu.be/d8ovNewe2As?si=on4Ltl-abxf0Pu_s)
 
-[![Old Money Reference](https://i.ytimg.com/an_webp/jaaR9vMQGTg/mqdefault_6s.webp?du=3000&sqp=CKCOv84G&rs=AOn4CLBUKs7udx_EH_nK7KN0OsrrWhgagQ)]
+![Superman](https://th.bing.com/th?&id=OVP.qzV6M8Oblqu_PLAh4itNUwHgFo&w=321&h=180&c=7&pid=2.1&rs=1)
 
-(*Figure. Old Money Reference*)
+[Video Click Here: Ex Machina Soundtrack Reference](https://youtu.be/4OmwjCX08l8?si=iKznTfV6hFSjGZPs)
+
+![Bunsen](https://th.bing.com/th/id/OVP.hrRYkmqpwdCM7CaIQ6cZZgEsDh?w=243&h=136&c=7&rs=1&qlt=70&o=7&dpr=1.1&pid=2.1&rm=3)
+
+(*Figure and . Initial Music References*.)
+
+
+To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and game play context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
+
+ However, after further thought from the designers, we pivoted to a more lighthearted jazz vibe. We took inspiration based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010).  
 
 [Video Click Here: Poker Night Reference](https://youtu.be/zbnhXCbP-jU?si=ZA4UwPBuxWlPC1G9) 
 
@@ -51,12 +60,25 @@ As a team, we shared **reference material and curated playlists** based on games
 
 (*Figure. Poker Night Music Reference.*)
 
+In addition, we provided voice acting references to guide performance. For example, the narrator character was inspired by the “Old Money” style delivery found in Deadlock (Valve, 2024), helping to establish a clear tone and personality for voice performances.
 
-To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and game play context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
+
+[Video Click Here: Old Money Reference](https://youtu.be/jaaR9vMQGTg?si=jL76GBk_HUIwVV4i)
+
+
+![ArchMother](https://th.bing.com/th/id/OIP.44HUgNawE30GiGhmNDvYrwHaFj?w=222&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3)
+
+
+(*Figure. Old Money Reference*)
+
 
 An initial mistake in the audio pre-production process was casting voice actors based on generic portfolio auditions rather than using lines from the game itself. While some actors were well-suited to their roles, others did not match the intended tone or character, resulting in inefficient use of studio time. In future projects, I would ensure that all actors are auditioned using game-specific lines. 
 
+[Video Click Here: Card Sound Reference](https://youtu.be/z7AQ8vK9t64?si=akBoHI7FVHnE0Lxy)
 
+![UNO](https://i.ytimg.com/an_webp/z7AQ8vK9t64/mqdefault_6s.webp?du=3000&sqp=CIzv_c4G&rs=AOn4CLCgX47SqmGbnxEDDdlLtMZFldwMTA)
+
+(*Figure. Card Reference.*)
 
 ## Audio Production  
 
