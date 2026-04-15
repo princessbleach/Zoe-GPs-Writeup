@@ -38,6 +38,8 @@ For access to **Tools and Production** task repositories, see [RepositoryLinks.m
 
 During pre-production, audio direction was established collaboratively to ensure a consistent vision across the project.  
 
+#### Music
+
 As a team, we shared **reference material and curated playlists**. This helped define the tone, pacing, and overall atmosphere of the game early in development. Originally, we steered towards the electronic music genre, centering a more sinister tone. Reference songs included: LuthorCorp (Murphy, 2025), Bunsen Burner (CUTS, 2016). 
 
 [Video Click Here: Superman Soundtrack Reference](https://youtu.be/d8ovNewe2As?si=on4Ltl-abxf0Pu_s)
@@ -53,6 +55,14 @@ As a team, we shared **reference material and curated playlists**. This helped d
 
 To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and game play context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
 
+<audio controls>
+  <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/LiamMenuDemo.mp3">
+  Your browser does not support the audio element.
+</audio>
+
+(*Figure . Initial Demo From Musician Liam Unwin.*)
+
+
  However, after further thought from the designers, we pivoted to a more lighthearted jazz vibe. We took inspiration based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010).  
 
 
@@ -62,6 +72,28 @@ To further align the audio direction, musicians were asked to produce **small de
 [![Poker Night Reference](https://i.ytimg.com/vi/zbnhXCbP-jU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGD4gZSgcMA8=&rs=AOn4CLCvsP2lz7OPgtoS8JNmnAeh3oU79g)]
 
 (*Figure. Poker Night Music Reference.*)
+
+One designer, Daniel,  sent a menu music demo. It was recieved well by the group and certain feedback was given. 
+
+<audio controls>
+  <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/DanielMenu.mp3">
+  Your browser does not support the audio element.
+</audio>
+
+(*Figure. Initial Menu Music from Designer Daniel.*)
+
+I decided to make changes to this demo; different drums, added saxophone and piano. This increased cohesiveness with the jazz genre we had chosen. This collaborative approach worked well and eventually this theme became the main menu.
+
+<audio controls>
+  <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/MenuZoeAdditionDaniel.wav">
+  Your browser does not support the audio element.
+</audio>
+
+(*Figure. Revised Menu Music With My Additions.*)
+
+
+
+#### Voice Acting
 
 In addition, we provided voice acting references to guide performance. For example, the narrator character was inspired by the “Old Money” style delivery found in Deadlock (Valve, 2024), helping to establish a clear tone and personality for voice performances.
 
@@ -77,6 +109,7 @@ In addition, we provided voice acting references to guide performance. For examp
 
 An initial mistake in the audio pre-production process was casting voice actors based on generic portfolio auditions rather than using lines from the game itself. While some actors were well-suited to their roles, others did not match the intended tone or character, resulting in inefficient use of studio time. In future projects, I would ensure that all actors are auditioned using game-specific lines. 
 
+#### Foley
 
 Before recording foley sounds, we mainly drew inspiration from the UNO mobile game (Mattel163, 2019). These sounds were easily replicable and perfect for our style of card game. This reference also allowed us to spot any missing card sounds in our asset list, such as table card slides etc.
 
@@ -99,6 +132,19 @@ We recorded all voice lines over two days in one of the uni studios. The process
 
 (*Figures . Voice Actors in Studio With Reference Material On Screen*)
 
+<audio controls>
+  <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/Nobody_PositiveInvestment_002_v2.wav">
+  Your browser does not support the audio element.
+</audio>
+
+(*Figure . Nobody Voice Line. Actor*)
+
+<audio controls>
+  <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/OldMoney_NobodyBanktrupt_001_v1.wav">
+  Your browser does not support the audio element.
+</audio>
+
+(*Figure . Old Money Line.*)
 
 
 #### Music, Foley/SFX
@@ -109,6 +155,7 @@ For music, foley, and SFX production, I managed a team of four music students, d
 <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/Trello.png" width="400">
 
 (*Figure . Trello Board.*)
+
 
 I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO was used to guide the style of card interaction sounds.
 
