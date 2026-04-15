@@ -54,6 +54,8 @@ To further align the audio direction, musicians were asked to produce **small de
 
  However, after further thought from the designers, we pivoted to a more lighthearted jazz vibe. We took inspiration based on games such as Liar’s Bar (Treehouse Games, 2023) and Poker Night at the Inventory (Telltale Games, 2010).  
 
+
+
 [Video Click Here: Poker Night Reference](https://youtu.be/zbnhXCbP-jU?si=ZA4UwPBuxWlPC1G9) 
 
 [![Poker Night Reference](https://i.ytimg.com/vi/zbnhXCbP-jU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGD4gZSgcMA8=&rs=AOn4CLCvsP2lz7OPgtoS8JNmnAeh3oU79g)]
@@ -73,6 +75,10 @@ In addition, we provided voice acting references to guide performance. For examp
 
 
 An initial mistake in the audio pre-production process was casting voice actors based on generic portfolio auditions rather than using lines from the game itself. While some actors were well-suited to their roles, others did not match the intended tone or character, resulting in inefficient use of studio time. In future projects, I would ensure that all actors are auditioned using game-specific lines. 
+
+
+Before recording foley sounds, we mainly drew inspiration from the UNO mobile game (Mattel163, 2019). These sounds were easily replicable and perfect for our style of card game. This reference also allowed us to spot any missing card sounds in our asset list, such as table card slides etc.
+
 
 [Video Click Here: Card Sound Reference](https://youtu.be/z7AQ8vK9t64?si=akBoHI7FVHnE0Lxy)
 
@@ -98,7 +104,12 @@ We recorded all voice lines over two days in one of the uni studios. The process
 
 For music, foley, and SFX production, I managed a team of four music students, dividing them into groups and assigning each a specific sound category. To support organisation, I created a Trello (Atlassian, 2024) board where designers could upload asset lists. This allowed musicians to easily view, claim, and track required audio assets. Designers were also able to attach reference audio to each task, which helped communicate intent and improved consistency across submissions. At this stage of development, limited visual material was available. 
 
-I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO (Ubisoft, 2016) was used to guide the style of card interaction sounds.
+<p align="center">
+<img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/Trello.png" width="400">
+
+(*Figure . Trello Board.*)
+
+I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO was used to guide the style of card interaction sounds.
 
 <p align="center">
 <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/Foley.jpeg?raw=true" width="300">
@@ -110,7 +121,6 @@ All sound effects were submitted through a custom Discord bot I developed (discu
 ## Audio Implementation 
 
 For implementation, I chose to use **Sound Cues** rather than MetaSounds, as this allowed for a simpler and more efficient workflow while still achieving the required functionality. All voice lines, foley, and SFX were organised into Sound Cues, making use of **randomiser and modulator nodes** to introduce variation in playback and avoid repetition.  
-
 
 
 <iframe src="https://blueprintue.com/render/dv6pn3a7/" scrolling="no" allowfullscreen></iframe>
@@ -312,7 +322,7 @@ Telltale Games (2010) *Poker Night at the Inventory*.
 
 Valve (2024) *Deadlock*.
 
-Ubisoft (2016) *UNO*.
+Mattel163 (2019) *UNO! Mobile*.
 
 **SOFTWARE**
 
