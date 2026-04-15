@@ -27,6 +27,7 @@ Workflow + Pipeline Tools
 Archetypes
 - [Archetype and Voice Line Systems](#archetype-and-voice-line-systems)  
 - [Narrator System](#narrator-voice-lines)  
+- [Integration Challenges](#integration-challenges)
 
 
 For access to **Tools and Production** task repositories, see [RepositoryLinks.md](https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/RepositoryLinks.md)
@@ -37,7 +38,7 @@ For access to **Tools and Production** task repositories, see [RepositoryLinks.m
 
 During pre-production, audio direction was established collaboratively to ensure a consistent vision across the project.  
 
-As a team, we shared **reference material and curated playlists**. This helped define the tone, pacing, and overall atmosphere of the game early in development. Originally, we steered towards the electronic music genre, centering a more sinister tone. Reference songs included: LuthorCorp - John Murphy, Bunsen Burner - CUTS. 
+As a team, we shared **reference material and curated playlists**. This helped define the tone, pacing, and overall atmosphere of the game early in development. Originally, we steered towards the electronic music genre, centering a more sinister tone. Reference songs included: LuthorCorp (Murphy, 2025), Bunsen Burner (CUTS, 2016). 
 
 [Video Click Here: Superman Soundtrack Reference](https://youtu.be/d8ovNewe2As?si=on4Ltl-abxf0Pu_s)
 
@@ -294,15 +295,13 @@ This system separates data retrieval from playback, using structured data and ne
 
 ## Integration Challenges
 
-
+When integrating my system with a peer's pre-game lobby character selection, I struggled to carry over the variable gameplay tags from one level to the next. We decided the quickest solution was to move the character select into the main level itself. 
 
 An issue arose when integrating the archetype system with the character selection flow. Initially, archetypes were being initialised at the start of the level, before players had made their selection. This resulted in incorrect or default archetypes being applied.  
 
 To resolve this, archetype initialisation was moved to occur only after a player had selected and confirmed their choice. This ensured that the correct Data Asset was applied at the appropriate time.  
 
-Further challenges occurred in multiplayer, where archetype data was not consistently shared between clients. This was resolved by storing the selected archetype in **Player State** and using replication to ensure all players received the correct data. An OnRep function was then used to reapply the archetype on each client when updated.  
 
-This process highlighted the importance of timing and data ownership in multiplayer systems, particularly when integrating UI-driven selection with runtime gameplay logic.
 
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
@@ -312,7 +311,6 @@ This process highlighted the importance of timing and data ownership in multipla
 **AI DECLARATION**
 
 AI assistance (ChatGPT, OpenAI) was used to support structuring and refinement of this document. 
-
 
 **GAMES**
 
@@ -334,6 +332,11 @@ GitHub (2026) *GitHub*. Available at: https://github.com/
 
 Epic Games (2026) *Unreal Engine*. Available at: https://www.unrealengine.com/
 
+**MUSIC**
+
+Murphy, J. (2025) *LuthorCorp*. 
+
+CUTS (2016) *Bunsen Burner*. 
 
 **OTHER**
 
