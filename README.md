@@ -1,6 +1,10 @@
 # Greedy Piggies Development Log 
-Zoe Efstathiou 2423029
+> Zoe Efstathiou
+> **2423029**
 
+FGCT5017: Tools and Production 
+
+FGCT5007: Industry Brief
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
@@ -268,7 +272,7 @@ The server features:
 - Role selection for region and pronouns using pre-existing bot
 - Optional roles for receiving social media updates  
 - Clearly defined rules and a dedicated welcome and information area  
-- The use of webhooks to deliver announcements and updates efficiently
+- The use of Webhooks to deliver announcements and updates efficiently
   
 
  Webhooks are automated messages sent between applications when a specific event occurs, enabling real-time communication without manual input (GitHub, 2026). I chose to use Webhooks so that I wouldn't have to send messages from my own account. This solves any problems caused if I were to leave the server or detach from the project in the future.
@@ -311,7 +315,7 @@ This distinction ensured that audio remained clear within a multiplayer environm
 
 (*Figure. BP_ArchetypeComponent Event Graph.*)
 
-Cooldowns were implemented to prevent voice lines from being triggered repeatedly in quick succession. Each category was given a delay before it could be played again. These cooldowns could be adjusted per line in the Data Asset. This reduced audio overlap and ensured voice lines remained clear and impactful, particularly in multiplayer.
+Cooldowns were implemented to prevent voice lines from being triggered repeatedly in quick succession. Each category was given a delay before it could be played again. These cool downs could be adjusted per line in the Data Asset. This reduced audio overlap and ensured voice lines remained clear and impactful, particularly in multiplayer.
 
 
 An **Apply Archetype** function was used to initialise each player’s setup, assigning meshes, animation settings, and voice data. Animation montages were triggered alongside voice lines to maintain consistency between audio and visual feedback.  
@@ -342,13 +346,26 @@ This system separates data retrieval from playback, using structured data and ne
 
 ## Integration Challenges
 
-When integrating my system with a peer's pre-game lobby character selection, I struggled to carry over the variable gameplay tags from one level to the next. We decided the quickest solution was to move the character select into the main level itself. 
+When integrating my system with a peer's pre-game lobby character selection, I struggled to carry over the variable game play tags from one level to the next. We decided the quickest solution was to move the character select into the main level itself. 
 
 An issue arose when integrating the archetype system with the character selection flow. Initially, archetypes were being initialised at the start of the level, before players had made their selection. This resulted in incorrect or default archetypes being applied.  
 
 To resolve this, archetype initialisation was moved to occur only after a player had selected and confirmed their choice. This ensured that the correct Data Asset was applied at the appropriate time.  
 
+## Reflection
 
+### +
+
+Coordinating a diverse team of musicians, designers and developers went successfully. I believe this was due to the systems I had in place - Trello board, Discord server and constant communication. The feedback loop created ensured everyone was informed and a shared vision was able to be executed. In terms of the audio output, the whole team was happy. Every step of audio creation was collaborative and I believe the team moral was kept high throughout the project.
+
+
+### -
+
+Some pieces of music could've been developed further and more sounds could have been created but I enforced deadlines to ensure we were finished when needed. In retrospect, we were complete with sound creation in week 5 which was reasonably ahead of the game's development. Meaning sounds I had began to implement were either overwritten, or lost in gamep lay changes. When doing a similar project in the future, I would rush less into completion. I would also improve my communication going forward. When recieving demo tracks from musicians, I was afraid to be honest and direct. This ultimately lead to time wasted.
+
+ Although happy with the sound, I would've liked to implement it more creatively and with more impressive features; however, I was needed elsewhere on the project and had to focus my efforts there.
+
+I was not initially responsible for archetype systems, however, moved over to this area to aid hasten development. Although happy with my efforts, the system was not as efficient as I would have liked.
 
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
