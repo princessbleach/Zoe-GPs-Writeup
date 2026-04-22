@@ -54,7 +54,7 @@ As a team, we shared **reference material and curated playlists**. This helped d
 
 ![Bunsen](https://th.bing.com/th/id/OVP.hrRYkmqpwdCM7CaIQ6cZZgEsDh?w=243&h=136&c=7&rs=1&qlt=70&o=7&dpr=1.1&pid=2.1&rm=3)
 
-(*Figure and . Initial Music References*.)
+(*Figures 1 and 2. Initial Music References*.)
 
 
 To further align the audio direction, musicians were asked to produce **small demo tracks** based on these references. This allowed for early feedback and iteration, ensuring that the final music would fit the intended style and game play context.  This process improved communication between designers and audio contributors, reduced inconsistencies, and established a clear foundation for implementation later in development.
@@ -75,7 +75,7 @@ To further align the audio direction, musicians were asked to produce **small de
 
 [![Poker Night Reference](https://i.ytimg.com/vi/zbnhXCbP-jU/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGD4gZSgcMA8=&rs=AOn4CLCvsP2lz7OPgtoS8JNmnAeh3oU79g)]
 
-(*Figure. Poker Night Music Reference.*)
+(*Figure 3. Poker Night Music Reference.*)
 
 One designer, Daniel,  sent a menu music demo. It was recieved well by the group and certain feedback was given. 
 
@@ -84,7 +84,7 @@ One designer, Daniel,  sent a menu music demo. It was recieved well by the group
   Your browser does not support the audio element.
 </audio>
 
-(*Figure. Initial Menu Music from Designer Daniel.*)
+(*Figure 4. Initial Menu Music from Designer Daniel.*)
 
 I decided to make changes to this demo; different drums, added saxophone and piano. This increased cohesiveness with the jazz genre we had chosen. This collaborative approach worked well and eventually this theme became the main menu.
 
@@ -93,7 +93,7 @@ I decided to make changes to this demo; different drums, added saxophone and pia
   Your browser does not support the audio element.
 </audio>
 
-(*Figure. Revised Menu Music With My Additions.*)
+(*Figure 5. Revised Menu Music With My Additions.*)
 
 
 
@@ -108,7 +108,7 @@ In addition, we provided voice acting references to guide performance. For examp
 ![ArchMother](https://th.bing.com/th/id/OIP.44HUgNawE30GiGhmNDvYrwHaFj?w=222&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3)
 
 
-(*Figure. Old Money Reference*)
+(*Figure 5. Old Money Reference*)
 
 
 An initial mistake in the audio pre-production process was casting voice actors based on generic portfolio auditions rather than using lines from the game itself. While some actors were well-suited to their roles, others did not match the intended tone or character, resulting in inefficient use of studio time. In future projects, I would ensure that all actors are auditioned using game-specific lines. 
@@ -122,7 +122,7 @@ Before recording foley sounds, we mainly drew inspiration from the UNO mobile ga
 
 ![UNO](https://i.ytimg.com/an_webp/z7AQ8vK9t64/mqdefault_6s.webp?du=3000&sqp=CIzv_c4G&rs=AOn4CLCgX47SqmGbnxEDDdlLtMZFldwMTA)
 
-(*Figure. Card Reference.*)
+(*Figure 6. Card Reference.*)
 
 ## Audio Production  
 
@@ -134,21 +134,21 @@ We recorded all voice lines over two days in one of the uni studios. The process
  <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/Actor.jpeg?raw=true" width="20%">
  <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/RecordingInspo.jpeg?raw=true" width="21%">
 
-(*Figures . Voice Actors in Studio With Reference Material On Screen*)
+(*Figures 7 and 8. Voice Actors in Studio With Reference Material On Screen*)
 
 <audio controls>
   <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/Nobody_PositiveInvestment_002_v2.wav">
   Your browser does not support the audio element.
 </audio>
 
-(*Figure . Nobody Voice Line. Actor*)
+(*Figure 9. Nobody Voice Line. Actor*)
 
 <audio controls>
   <source src="https://raw.github.com/princessbleach/Zoe-GPs-Writeup/main/Sound/OldMoney_NobodyBanktrupt_001_v1.wav">
   Your browser does not support the audio element.
 </audio>
 
-(*Figure . Old Money Line.*)
+(*Figure 10. Old Money Line.*)
 
 
 #### Music, Foley/SFX
@@ -158,15 +158,27 @@ For music, foley, and SFX production, I managed a team of four music students, d
 <p align="center">
 <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/Trello.png" width="400">
 
-(*Figure . Trello Board.*)
+(*Figure 11. Trello Board.*)
 
+<audio controls>
+  <source src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/main/Sound/1%20GREEDY%20PIGGIES%20WINNER.wav">
+  Your browser does not support the audio element.
+</audio>
+
+<audio controls>
+  <source src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/main/Sound/1%20greedy%20piggies%20Defeat%20theme.wav">
+  Your browser does not support the audio element.
+</audio>
+
+
+(*Figures 12. Win and Lose themes.*)
 
 I attended the initial foley recording session to support the creation of core sounds. Real playing cards and additional props were used to produce authentic audio.  Reference material from UNO was used to guide the style of card interaction sounds.
 
 <p align="center">
 <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/Foley.jpeg?raw=true" width="300">
 
-(*Figure . Foley Artist Making Card Sounds.*)
+(*Figure 13. Foley Artist Making Card Sounds.*)
 
 All sound effects were submitted through a custom Discord bot I developed (discussed later), with the majority of assets completed by week 6. Music production required a longer iteration process, with multiple revisions to better align with the intended tone of the game. I worked with a designer on creating the menu track also.
 
@@ -177,13 +189,13 @@ For implementation, I chose to use **Sound Cues** rather than MetaSounds, as thi
 
 <iframe src="https://blueprintue.com/render/dv6pn3a7/" scrolling="no" allowfullscreen></iframe>
 
-(*Figure. Sound Cue Example.*)
+(*Figure 14. Sound Cue Example.*)
 
 To create the ambient soundscape for the main level, I developed a system using **target points placed within the environment** to define the origin of each sound. These were referenced within a Blueprint (BP_SoundAmbienceManager), where sounds were triggered at their locations using *Spawn Sound at Location*.  Each ambient sound (e.g. bar noise or chair movement) was linked to a specific target point and Sound Cue. To avoid predictable repetition, I used a **timer system with randomised intervals**, allowing sounds to play naturally over time rather than looping continuously.  Validation checks were also implemented to ensure that target points existed before attempting to play sounds, improving stability and preventing runtime errors.  
 
 <iframe src="https://blueprintue.com/render/unh5na9y/" scrolling="no" allowfullscreen></iframe>
 
-(*Figure. Sound Ambience Manager.*)
+(*Figure 15. Sound Ambience Manager.*)
 
 I also asked a designer to use Unreal's inbuilt subtitle system and write subtitles for each voice line sound wave. 
 
@@ -201,7 +213,7 @@ Whenever a slider is adjusted, the updated values are applied immediately and wr
 
 <iframe src="https://blueprintue.com/render/h7-aezl5/" scrolling="no" allowfullscreen></iframe>
 
-(*Figure. Sound Settings*)
+(*Figure 16. Sound Settings*)
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
@@ -225,7 +237,7 @@ I then collated the submitted ticket data (with consent) and conducted analysis 
 <p align="center">
 <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/TicketDemo.gif" width="650">
 
-(*Figure. Ticket Bot Demo.*)
+(*Figure 17. Ticket Bot Demo.*)
 
 ## Discord Sound Submission Bot  
 
@@ -245,7 +257,7 @@ Submitted files were automatically organised into the project directory, allowin
 <p align="center">
 <img src="https://raw.githubusercontent.com/princessbleach/Zoe-GPs-Writeup/refs/heads/main/Images/SoundUploadDemonstration.gif" width="650">
 
-(*Figure. Audio Upload Bot Demo.*)
+(*Figure 18. Audio Upload Bot Demo.*)
 
 ## Audio Team Discord Server  
 
@@ -261,7 +273,7 @@ The server provided:
 <p align="center">
 <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/AudioTeamServer.png?raw=true" width="400">
 
-(*Figure. Audio Standards in Audio Team Server.*)
+(*Figure 19. Audio Standards in Audio Team Server.*)
 
 ## Public Facing Discord Server
 
@@ -283,7 +295,7 @@ The server features:
  <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/PublicServerRules.png?raw=true" width="35%">
  <img src="https://github.com/princessbleach/Zoe-GPs-Writeup/blob/main/Images/PublicServerWelcome.png?raw=true" width="35%">
 
- (*Figure . Webhook Messages in Public Server.*)
+ (*Figure 20. Webhook Messages in Public Server.*)
 
 <hr style="height:3px; border:none; background-color:#ffb6c1;">
 
@@ -295,7 +307,7 @@ Each archetype was implemented as a **Data Asset**, containing references to ske
 
 <iframe src="https://blueprintue.com/render/kpey9wm3/" scrolling="no" allowfullscreen></iframe>
 
-(*Figure. Lose Reaction Function Example in BP_ArchetypeComponent.*)
+(*Figure 21. Lose Reaction Function Example in BP_ArchetypeComponent.*)
 
 This type of system allows for designers to easily swap in animations, meshes etc without having to write Blueprints. They can simply drag into the data assets.
 
@@ -313,7 +325,7 @@ This distinction ensured that audio remained clear within a multiplayer environm
 
 <iframe src="https://blueprintue.com/render/yz0s_839/" scrolling="no" allowfullscreen></iframe>
 
-(*Figure. BP_ArchetypeComponent Event Graph.*)
+(*Figure 22. BP_ArchetypeComponent Event Graph.*)
 
 Cooldowns were implemented to prevent voice lines from being triggered repeatedly in quick succession. Each category was given a delay before it could be played again. These cool downs could be adjusted per line in the Data Asset. This reduced audio overlap and ensured voice lines remained clear and impactful, particularly in multiplayer.
 
@@ -322,7 +334,7 @@ An **Apply Archetype** function was used to initialise each player’s setup, as
 
 <iframe src="https://blueprintue.com/render/7ulrrp07/" scrolling="no" allowfullscreen></iframe>
 
-(*Figure. ApplyArchetype Function.*)
+(*Figure 23. ApplyArchetype Function.*)
 
 ##  Narrator Voice Lines
 
@@ -334,7 +346,7 @@ The **GetGlobalNarratorLine** function iterates through this array using a *For 
 
 <iframe src="https://blueprintue.com/render/mpp9bw36/" scrolling="no" allowfullscreen></iframe>
 
-(*Figures. GetGlobalNarratorLine and GetNarratorLine Functions.*)
+(*Figures 24 and 25. GetGlobalNarratorLine and GetNarratorLine Functions.*)
 
 Playback is handled through replicated multicast events:
 - **MC_PlayNarratorLine** is used for archetype-specific outcomes  
